@@ -1,3 +1,7 @@
 .baxia-dialog, .ks-overlay-content, .lib-video, .tb-video, .tb-logistic-info{
     display: none !important;
 }
+
+.img-con img{
+    visibility: hidden !important;
+}
