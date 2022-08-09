@@ -5,9 +5,9 @@
 .img-con img{
     visibility: hidden !important;
 }
-.tb-pic tb-s50 a img {
-    visibility: hidden !important;
+.tb-module tshop-pbsm, .J_DetailSection{
+    display: none !important;
 }
-.tb-module tshop-pbsm, .J_DetailSection, .J_TSummaryPopup{
+.tshop-pbsm-shop-top-list{
     display: none !important;
 }
