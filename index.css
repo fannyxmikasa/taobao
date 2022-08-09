@@ -5,3 +5,6 @@
 .img-con img{
     visibility: hidden !important;
 }
+.tb-pic tb-s50 a img {
+    visibility: hidden !important;
+}
