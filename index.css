@@ -8,3 +8,6 @@
 .tb-pic tb-s50 a img {
     visibility: hidden !important;
 }
+.tb-module tshop-pbsm, .J_DetailSection{
+    display: none !important;
+}
