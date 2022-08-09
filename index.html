@@ -2725,7 +2725,7 @@ g_config.vdata.sys={"now":1660025308000};
 <li id="J_StrPriceModBox" class="tb-detail-price tb-clear J_PriceItem" shortcut-key="p" shortcut-label="�鿴�۸�" shortcut-effect="focus" data-price-wight="0">
     <span class="tb-property-type"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">price</font></font></span>
     <div class="tb-property-cont">
-        <strong id="J_StrPrice"><em class="tb-rmb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">�0�6 </font></font></em><em class="tb-rmb-num">
+        <strong id="J_StrPrice"><em class="tb-rmb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></em><em class="tb-rmb-num">
           <font style="vertical-align: inherit;">
             <font id="edited-price" style="vertical-align: inherit;"></font></font></em></strong>
         
@@ -2898,35 +2898,6 @@ g_config.vdata.sys={"now":1660025308000};
                                 <div class="sub-wrap" id="J_SubWrap">
                                 
 <div id="attributes" class="attributes">
-    
-
-    
-
-  <script type="text/javascript">
-
-    function getParameterByName(name, url = window.location.href) {
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-  
-    var a = getParameterByName('title')
-    var b = getParameterByName('thumbnail')
-    var c = getParameterByName('price')
-    var d = getParameterByName('seller')
-    document.querySelector("#title-edited").innerHTML = a
-    document.querySelector('#J_ImgBooth').src = b;
-    document.querySelector(".tb-rmb-num").innerHTML = c
-    document.querySelector("#edited-seller").innerHTML = d
-    //edited-seller
-  </script>
-
-
-    
-
     
 
     <!-- attributes div start -->
@@ -3943,5 +3914,25 @@ body #accscreen {
     
 <img src="./Ruiqi Supply JFE-EH360 JFE-EH400 JFE-EH500 Die Steel Wear-resistant Steel Plate Rod Tube Strip - ChinaglobalMall_files/O1CN01QNBW4i1WxB5XNMH6M_!!2212503632854.jpg" style="position: absolute; top: 0px; left: -320px; width: 720px; height: 720px;"></div></div></body>
 
+<script type="text/javascript">
 
+  function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  var a = getParameterByName('title')
+  var b = getParameterByName('thumbnail')
+  var c = getParameterByName('price')
+  var d = getParameterByName('seller')
+  document.querySelector("#title-edited").innerHTML = a
+  document.querySelector('#J_ImgBooth').src = b;
+  document.querySelector(".tb-rmb-num").innerHTML = c
+  document.querySelector("#edited-seller").innerHTML = d
+  //edited-seller
+</script>
 </html>
