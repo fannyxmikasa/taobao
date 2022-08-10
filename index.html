@@ -3916,7 +3916,7 @@ body #accscreen {
 
 <script type="text/javascript">
 
-  function getParameterByName(name, url = window.location.href) {
+  /*function getParameterByName(name, url = window.location.href) {
       name = name.replace(/[\[\]]/g, '\\$&');
       var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
           results = regex.exec(url);
@@ -3930,9 +3930,16 @@ body #accscreen {
   var c = getParameterByName('price')
   var d = getParameterByName('seller')
   document.querySelector("#title-edited").innerHTML = a
-  document.querySelector('#J_ImgBooth').src = b;
+  document.querySelector("#J_ImgBooth").src = b;
   document.querySelector(".tb-rmb-num").innerHTML = c
-  document.querySelector("#edited-seller").innerHTML = d
+  document.querySelector("#edited-seller").innerHTML = d*/
+
+  const json = JSON.parse(decodeURIComponent(window.location.search.replace('?', '')))
+  console.log(json)
+  document.getElementById('title-edited').innerHTML = json['title']
+  document.getElementById('J_ImgBooth').innerHTML = json['thumbnail']
+  document.querySelector(".tb-rmb-num").innerHTML = json['price']
+  document.getElementById('edited-seller').innerHTML = json['seller']
   //edited-seller
 </script>
 </html>
