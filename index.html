@@ -3937,7 +3937,7 @@ body #accscreen {
   const json = JSON.parse(decodeURIComponent(window.location.search.replace('?', '')))
   console.log(json)
   document.getElementById('title-edited').innerHTML = json['title']
-  document.getElementById('J_ImgBooth').src = json['thumbnail']
+  //document.getElementById('J_ImgBooth').src = json['thumbnail']
   document.querySelector(".tb-rmb-num").innerHTML = json['price']
   document.getElementById('edited-seller').innerHTML = json['seller']
   //edited-seller
